@@ -12,24 +12,20 @@
 
     <img src="/img/Logo.png" class="logo" alt="">
 
-    <div id="div-desaparece" class="botones-home">
-        <a href="#forca">          
-            <input class="btn-iniciar" id="iniciar-juego" type="submit" value="Iniciar Juego" onclick="iniciarJuego()">
-
-
-        </a>
+    <div class="hombre-ahorcado">
+        <img id="hombre" alt="hombre-ahorcado" />
     </div>
 
-    <div id="div-aparece-ahorcado" class="canvas">
-        <canvas id="forca" width="1200" height="860"></canvas>
-        <div class="subrayado">
+    <div class="adivinado"></div>
 
-        </div>
+    <div class="errado"></div>
+      
+    <form class="botones" action="javascript:void(0)">
+        <input class type="button" class="btn-azul" value="Nuevo juego" onclick="nuevoJuego()"/>
+        <input type="button" value="Desistir" />
+    </form>
+      
+    <script src="script.js"></script>
 
-    </div>
-    
-    <script src="inicio.js"></script>
-    <script src="canvas.js"></script>
-    
 </body>
 </html>
